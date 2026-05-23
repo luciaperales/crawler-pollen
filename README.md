@@ -63,15 +63,40 @@ output.json
 # 📁 Estructura del proyecto
 
 ```text
-web-scrapping/
+crawler-atlas-polinico/
 │
+├── core/
+│   └── crawler.js
+│
+├── data/
+│   └── output.json
+│
+├── parsers/
+│   └── species.js
+│
+├── utils/
+│
+├── .gitignore
+├── config.js
 ├── index.js
 ├── package.json
-├── output.json
-└── README.md
+└── package-lock.json
 ```
 
 ---
+
+# 🧩 Arquitectura
+
+- `core/`
+  - lógica principal del crawler
+- `parsers/`
+  - extracción y transformación de datos
+- `utils/`
+  - helpers y funciones reutilizables
+- `data/`
+  - resultados exportados en JSON
+ 
+  ---
 
 # 🧠 Cómo funciona
 
